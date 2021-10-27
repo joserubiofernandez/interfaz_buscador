@@ -1,0 +1,14 @@
+En esta carpeta se encuentra el proyecto de maquetación.
+Se ha utilizado HTML, CSS, JQuery y PHP, este último lenguaje para el envío
+de los datos recogidos en el formulario.
+Una vez enviados los datos, aparecen en una nueva ventana impresos sin estilo,
+con la finalidad de mostrar que estos datos han sido recogidos correctamente.
+
+Soy consciente de los posibles aspectos de mejora que tiene la prueba.
+En primer lugar, necesita una validación de los datos antes de enviarlos, 
+especialmente las fechas.
+Una vez sale la pestaña de "ocupación" se necesita dar de nuevo click en el
+div padre para que esta se oculte.
+Otro aspecto importante es que el formulario no ha sido desarrollado de manera
+'responsive'.
+Tiempo de ejecución 3 horas.

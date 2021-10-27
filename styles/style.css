@@ -1,0 +1,199 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+}
+:root {
+    --fuente:'Josefin Sans', sans-serif;
+    --colorPrincipal :  rgba(166,136,44,255);
+}
+
+header{
+    background: url(../fotos/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    
+}
+
+form{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.secccion_form{
+    display: flex;
+    height: 50%;
+    width: 15%;
+    background-color: white; 
+    justify-content: center;
+    align-items: center; 
+}
+.separador{
+    width: 100%;
+    height: 65%;
+    margin-left: 2vw;
+    border-right: 1px solid #9b9b9b;
+}
+
+#penultimo_separador{
+    border: 0;
+    text-align: center;
+    line-height: 50px; 
+}
+#ultimo_separador{
+    width: 75%;
+    height: 75%;
+    background-color: var(--colorPrincipal);
+    border-radius: 50px;
+    border: 0px;
+    text-align: center;
+    line-height: 50px; 
+    cursor: pointer;
+    
+}
+input[type='submit']{
+    color:#fff;
+    background-color: var(--colorPrincipal);
+    font-family: var(--fuente);
+    font-weight: 900;
+    font-size: 20px;
+    text-transform: uppercase;
+    transform: translate(0%, 25%);
+    
+}
+form div.secccion_form:first-child{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+form div.secccion_form:last-child{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+input{
+    border:none;
+    display: inline;
+    cursor: pointer;
+}
+#familia{
+    background-color: red;
+}
+input[type='date']{
+    display: block;
+    appearance: none;
+    cursor: pointer;
+}
+input[type='date']::-webkit-inner-spin-button,
+input[type='date']::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+
+#num_familia{
+    width: 15px;
+}
+#num_familia::-webkit-inner-spin-button,
+#num_familia::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+#num_nino{
+    width: 15px;
+}
+#num_nino::-webkit-inner-spin-button,
+#num_nino::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+#num_bebe{
+    width: 15px;
+}
+#num_bebe::-webkit-inner-spin-button,
+#num_bebe::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+label{
+    font-family: var(--fuente);
+    font-size: 16px;
+    font-weight: 200;
+}
+label+input{
+    font-family: var(--fuente);
+    font-size: 16px;
+    font-weight: 400; 
+    border:0px;
+}
+label+input:focus{
+    outline: none;
+}
+input[name='promocode']:focus{
+    outline: none;
+}
+label+p{
+    cursor: pointer;
+    font-family: var(--fuente);
+    font-size: 16px;
+    font-weight: 400;
+}
+#selector_ocupacion{
+    visibility: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 75px;
+    width: 375px;
+    position: absolute;
+    background-color: white;
+    border:3px solid  var(--colorPrincipal);
+    border-radius: 17px;
+    align-items: center;
+    top: 115px;
+}
+.separa_select{
+    height: 50%;
+    padding: 10px;
+    border-right: 1px solid  var(--colorPrincipal);
+}  
+.separa_select:last-child{
+    border: 0px;
+}
+.separa_select_ind{
+    display: flex;
+    margin: 2px;
+}
+#selector_ocupacion>p{
+    grid-column: 1 / 4;
+    grid-row: 0 / 2;
+    margin-left: 5px;
+    font-weight: 800;
+}
+#selector_ocupacion div>p, #selector_ocupacion div>i{
+    margin: 2px;
+}
+#selector_ocupacion div>i{
+    cursor: pointer;
+}
+#selector_ocupacion div>i:hover{
+    font-weight: 1000;
+    transition: 0.5s;
+}
+
+span[title]{
+    color: rgba(184,159,86,255);
+}
+span.ui-datepicker-month,span.ui-datepicker-year {
+    color:  var(--colorPrincipal);
+}
+.ui-state-default{
+    border-radius: 5px;
+}

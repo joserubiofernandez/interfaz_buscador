@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <!--Estilos-->
+        <link rel="stylesheet" href="./styles/style.css">
+
+        <!--Jquery-->
+        <link rel="stylesheet" href="./styles/jqui.css" />
+        <script src="./js/jq.js"></script>
+        <script src="./js/jqui.js"></script>
+        <script src="./js/dpes.js"></script>
+
+
+
+        <title>Prueba Jose Rubio Fernandez</title>
+    </head>
+    <body>
+        <header>
+                <div id='formulario'>
+                    <form action="./php/php.php" method="POST">
+                        <div class='secccion_form' id='entrada'>
+                            <div class="separador">
+                                <label for="entrada">Entrada</label>
+                                <input type="text" name="entrada" id="datepicker_entrada" placeholder="¿Cuándo?" required />
+                            </div>
+                        </div>
+                        
+                        <div class='secccion_form' id='salida'>
+                            <div class="separador">
+                                <label for="salida">Salida</label>
+                                <input type="text" name="salida" id="datepicker_salida"  placeholder="¿Cuándo?" required/>
+                            </div>
+                        </div>
+                        
+                        <div class='secccion_form' id='ocupacion'>
+                            <div class="separador">
+                                <label for="ocupacion">Ocupación</label>
+                                <p id='desliza_ocupa'> 1 Habitación / 2 - 0</p>
+                                
+                                    <div id='selector_ocupacion'>
+                                        <p>Habitación 1</p>
+                                        <div class="separa_select">
+                                            <div id='selector_adultos' class="separa_select_ind">
+                                                <p>Adultos</p>
+                                                <i id="suma_familia">&plus;</i>
+                                                <input type="number" name="familia" id="num_familia" placeholder="2" value="2" />
+                                                <i id="resta_familia">&minus;</i>
+                                            </div>
+                                        </div>
+                                        <div class="separa_select">   
+                                            <div id='selector_ninos' class="separa_select_ind">
+                                                <p>Niños</p>
+                                                <i id="suma_nino">&plus;</i>
+                                                <input type="number" name="nino" id="num_nino" placeholder="0" value="0"/>
+                                                <i id="resta_nino">&minus;</i>
+                                            </div>
+                                        </div>
+                                        <div class="separa_select">
+                                            <div id='selector_bebe' class="separa_select_ind">
+                                                <p >Bebés</p>
+                                                <i id="suma_bebe">&plus;</i>
+                                                <input type="number" name="bebe" id="num_bebe" placeholder="0" value="0"/>
+                                                <i id="resta_bebe"> &minus;</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        
+                        <div class='secccion_form' id='promo'>
+                            <div class="separador" id='penultimo_separador'>
+                                <input type="text" name='promocode' placeholder="PROMOCODE" maxlength="6" pattern="[a-z]{1,15}" />
+                            </div>
+                            
+                        </div>
+                        
+                        <div class='secccion_form' id='buscar'>
+                            <div class="separador" id='ultimo_separador'>
+                                <input type="submit" value="Reservar" name='submit'/>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+        </header>
+        <script src="./js/js.js"></script>
+    </body>
+</html>
